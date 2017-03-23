@@ -5,6 +5,7 @@ declared-services:
     plan: free
 applications:
 - name: conversation-simple-rkm
+  host: rkmenon
   command: npm start
   path: .
   memory: 256M
