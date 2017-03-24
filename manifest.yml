@@ -4,13 +4,13 @@ declared-services:
     label: conversation
     plan: free
 applications:
-- name: conversation-simple-rkm
+- name: conversation-simple
   host: rkmenon
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - conversation-2d
+  - my-conversation-service
   env:
     NPM_CONFIG_PRODUCTION: false
